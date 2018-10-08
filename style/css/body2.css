@@ -1,0 +1,288 @@
+.parallaxbody { 
+    background-color: #BDA55D;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+ .headimg
+
+{
+
+  filter: drop-shadow(1px 1px 5px black)
+}
+
+.carousel-content
+{
+
+  position: absolute;
+  bottom: 78%;
+  left: 3%;
+  z-index: 20;
+  font-family: 'Lora', serif;
+  font-weight: 700;
+  color: #FFFFFF;
+  opacity: 0.8;
+
+}
+
+.headimg > .row >.col-12 > .row > p
+{
+
+  font-family: 'Lora', serif;
+	font-size: 25px;
+	font-style: justify;
+	color: black;
+
+}
+
+
+
+
+
+
+.jumbotron-fluid.banner
+
+{
+  background-color: #DAAF93;
+	text-align: justify;
+  align-items: center;
+}
+
+.banner > .container > .row > .col-12 > h2 
+{
+	font-family: 'Lora', serif;
+      font-size: 15px;
+      color:  #FFFFFF;
+
+}
+
+.banner > .container > .row > .col-12 > h4
+{
+  font-family: 'Lora', serif;
+      font-size: 15px;
+      color:  #FFFFFF;
+
+}
+
+
+
+.arch 
+
+{
+    background-color: transparent;
+
+    background-image: url("../../image/homepage/archbg.jpg");
+      padding-top: 20px;
+      padding-bottom: 40px;
+      background-size:40% 50%;
+      filter: drop-shadow(1px 1px 1px grey);
+      background-repeat: no-repeat;
+      background-position: centered-left;  
+      opacity: 0.9;
+}
+
+
+
+
+.arch > h1
+
+{
+		font-family: 'Lora', serif;
+		font-weight: 700;
+		color: #FFFFFF;
+}
+
+
+.arch > h2
+
+{
+		font-family: 'Lora', serif;
+		font-weight: 700;
+    color: #FFFFFF;
+}
+
+
+.arch > li
+
+{
+		font-family: 'Lora', serif;
+    color: #FFFFFF;
+	font-size: 24px;
+}
+
+.arch > video
+
+{
+    filter: drop-shadow(1px 1px 15px black);
+
+}
+
+.feat 
+
+{
+  background-color: #F3EAAF;
+
+
+}
+
+.feat .row{
+
+  text-align: center;
+}
+
+
+.feat > h1
+
+{
+	font-family: 'Lora', serif;
+		font-weight: 700;
+
+}
+
+
+.jumbotron-fluid .feat > li
+
+{
+		font-family: 'Lora', serif;
+
+	font-size: 24px;
+}
+
+
+.amenvid 
+
+{
+ background-color: transparent !important;
+
+}
+
+
+.jumbotron-fluid.amenvid > video
+
+{
+   align-items: center;
+	width: 100%;
+ filter: drop-shadow(1px 1px 15px black)
+
+}
+
+
+
+.jumbotron-fluid.amerec 
+
+{
+  background-color: #F3EAAF;
+
+
+}
+
+
+
+.jumbotron-fluid.amerec > h1
+
+{
+ font-family: 'Lora', serif;
+		font-weight: 700;
+
+
+}
+
+.jumbotron-fluid.amerec > li
+
+{
+ font-family: 'Lora', serif;
+
+	font-size: 24px;
+
+
+}
+
+.jumbotron-fluid.gallery 
+
+{
+  background-color: #8E8268;
+
+
+
+}
+
+
+/* from internet */
+
+.card-hover .reveal {
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+    padding: 0;
+}
+
+.card-hover:hover .reveal {
+    height: auto;
+    visibility: visible;
+    opacity: 10;
+    transition: opacity 1s ease;
+}
+
+
+/* Fixed/sticky icon bar (vertically aligned 50% from the top of the screen) */
+.icon-bar {
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/* Style the icon bar links */
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}
+
+/* Style the social media icons with color, if you want */
+.icon-bar a:hover {
+  background-color: #000;
+}
+
+.facebook {
+  background: #3B5998;
+  color: white;
+}
+
+
+.google {
+  background: #dd4b39;
+  color: white;
+}
+
+.youtube {
+  background: #bb0000;
+  color: white;
+}
+
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: red; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+}
+

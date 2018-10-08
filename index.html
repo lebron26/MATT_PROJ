@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html ng-app="myApp" >
+<head>
+  <title>MATT Homepage</title>
+  <base href="http://localhost:8080/MATT_PROJ/" />
+  <link rel="icon" href="image/logo_kMu_icon.ico">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <link rel="stylesheet" href="style/css/body.cs">
+  <link rel="stylesheet" href="style/css/card.cs">
+  <link rel="stylesheet" href="style/css/carousel.cs">
+  <link rel="stylesheet" href="style/css/parallax.cs">
+  <!--link href="style/css/body2.css" rel="stylesheet"-->
+  <!-- Fonts -->
+  <link href="http://fonts.googleapis.com/css?family=Corben:bold" rel="stylesheet" type="text/css">
+  <link href="http://fonts.googleapis.com/css?family=Nobile" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto|Lobster" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fontisto@v3.0.4/css/fontisto/fontisto.min.css">
+
+</head>
+
+<body ng-controller="homeCtrl"  class="parallaxbody">
+  <nav class="navbar navbar-expand-lg navbar-light py-0 fullnav sticky-top">
+
+      <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand ml-5" href="#home" ng-click="gotoTOP()" ><img class="img-responsive" src="image/homepage/rfs.png" width="100%" height="auto"></a>
+          <div class="collapse navbar-collapse " id="navbarCollapse">
+            <ul class="navbar-nav  mr-auto mt-2 mt-lg-0 py-2 nav-fill w-75">
+              <li class="nav-item"><a class="nav-link button" role="button" ng-click="gotoTOP()" href="#home">Home</a></li>
+
+                <li class="nav-item"><a class="nav-link" ng-href="#about-us" ng-click="gotoTOP()">About Us</a></li>
+                <li class=" nav-item dropdown " >
+                    <a ng-href="#properties"  ng-click="gotoTOP()" class=" nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Properties </a>
+                    <div class=" dropdown-menu dropdown-menu-right" >
+
+                      <div class="dropdown-item" ng-repeat="category in category" >
+                        <div ng-if="category =='houseNlot'">
+                          <a ng-href="#house" ng-click="gotoTOP()">House and Lot</a>
+                        </div>
+                        <div ng-if="category =='Popup'">
+                          <a ng-href="#pop" ng-click="gotoTOP()">Pop up</a>
+                        </div>
+                        <div ng-if="category =='villas'">
+                          <a ng-href="#error" ng-click="gotoTOP()">Villas</a>
+                        </div>
+                        <div ng-if="category =='condo'">
+                          <a ng-href="#error" ng-click="gotoTOP()">Condominiums</a>
+                        </div>
+                    </div>
+                  </li>
+                <li class="nav-item"><a class="nav-link"  ng-click="gotoTOP()"href="#contact">Contact Us</a></li>
+              </ul>
+                   <form class="form-inline my-2 my-lg-0">
+                           <div class="input-group-btn">
+                               <input class="form-control mr-sm-2" ng-model="searchText" type="search" placeholder="Search Properties">
+                               <button class="btn btn-outline-warning  my-2 my-sm-0" ng-click="submitFilter(searchText)" type="submit"><i class="fa fa-search"></i>
+
+                               </button>
+
+                           </div>
+                         </form>
+                       </div>
+
+          </div>
+
+  </nav>
+
+
+  <div ng-view>
+      <!--- LAHAT NG TEMPLATE D2 mag rurun -->
+
+  </div>
+
+  <div ng-include="'template/footer.html'"></div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <!-- JavaScript for: jQuery, angular, materialize, and angular-materialize. All of which are needed. -->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular-route.js"></script>
+  <script type="text/javascript" src="style/js/up.js"></script>
+  <script type="text/javascript" src="app/app.js"></script>
+
+  <script type="text/javascript" src="app/controllers/homecontroller.js"></script>
+  <script type="text/javascript" src="app/controllers/ProductController.js"></script>
+    <script type="text/javascript" src="app/directives/parallaxDirective.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css" />
+<script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
+<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css" />
+<script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
+<script>
+window.addEventListener("load", function(){
+window.cookieconsent.initialise({
+"palette": {
+  "popup": {
+    "background": "#1d8a8a"
+  },
+  "button": {
+    "background": "#62ffaa"
+  }
+},
+"theme": "classic",
+"type": "opt-out",
+"content": {
+  "message": "The website of Revolution Flavorscapes uses cookies to ensure you get the best experience on our developing website.",
+  "dismiss": "Understood"
+}
+})});
+</script>
+
+</body>
+</html>

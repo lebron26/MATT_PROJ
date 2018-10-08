@@ -1,0 +1,167 @@
+<div class="jumbotron-fluid">
+  <div class="parallax">
+
+
+    <div class="bodyparallax">
+
+      <h3>House and Lot</h3>
+      <p class="Lead">Every one of us desires to own the home of our dreams, but most of us don’t even know where to start.</p>
+    </div>
+  </div>
+
+</div>
+
+
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="#home">Home</a></li>
+    <li class="breadcrumb-item"><a href="#properties">Properties</a></li>
+    <li class="breadcrumb-item active" aria-current="page">House and Lot</li>
+  </ol>
+</nav>
+
+
+<section>
+  <div ng-repeat="housenlot in houseNLot">
+    <div ng-if="$index %2 ===0">
+      <div class=" container py-3">
+        <div class="row">
+
+
+          <!---FOR NG-REPEAT = housenlot in houseNLot | filter:{ 'name' : 'Alcove'}--->
+          <div class="col-md-12">
+            <div class="card my-4">
+              <div class="row">
+                <div class="col-md-8 hovereffect">
+                  <img src="{{ housenlot.images[0] }}" class="w-100 img-responsive">
+
+
+                  <div class="overlay">
+                    <h2></h2>
+                    <p>
+                      <a href="#/item/{{$index}}" ng-click="gotoTOP()">See more</a>
+                    </p>
+                  </div>
+                </div>
+                <div class="col-md-4 px-0">
+                  <div class="card-block px-3 text-center">
+
+                    </br>
+
+                    <h1 class="card-title">​{{ housenlot.name }}</h1>
+                    <hr>
+
+                    <p class="card-text Lead">{{ housenlot.desc }}</p>
+                    <p class="card-text">SELLING PRICE: <strong>P{{ housenlot.Selling }}</strong></p>
+                    <p class="card-text">Monthly: <strong>{{ housenlot.Monthly }}</strong></p>
+
+
+                    <div class="list-group-flush d-flex flex-row flex-wrap">
+                      <a class="list-group-item w-50 list-group-item-action">
+                        <i class="fas fa-bed"></i> <span>{{ housenlot.Bedroom }}</span>
+                      </a>
+                      <a class="list-group-item w-50 list-group-item-action">
+                        <i class="fas fa-bath"> </i><span>{{ housenlot.Bathroom }}</span>
+                      </a>
+                      <a class="list-group-item w-50 list-group-item-action">
+                        <i class="fas fa-home"> </i><span>{{ housenlot.House }}</span>
+                      </a>
+                      <a class="list-group-item w-50 list-group-item-action">
+                        <i class="fas fa-chart-area"> </i><span>{{ housenlot.Lot }}</span>
+                      </a>
+                    </div>
+                    </br>
+
+                    <div class="row">
+                      <div class="col">
+
+                        <a href="#/item/{{$index}}" ng-click="gotoTOP()">See More</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div ng-if="$index %2 ===1">
+      <div class="container-fluid px-0">
+        <div class="row">
+
+          <!---FOR NG-REPEAT = housenlot in houseNLot | filter:{ 'name' : 'Alcove'}--->
+          <div class="col-md-12">
+            <div class="card my-4">
+              <div class="row">
+
+                <div class="col-md-4 px-0">
+                  <div class="card-block px-3 text-center">
+
+                    </br>
+
+                    <h1 class="card-title">​{{ housenlot.name }}</h1>
+                    <hr>
+
+                    <p class="card-text Lead">{{ housenlot.desc }}</p>
+                    <p class="card-text">SELLING PRICE: <strong>P{{ housenlot.Selling }}</strong></p>
+                    <p class="card-text">DOWNPAYMENT: <strong>{{ housenlot.Monthly }}</strong></p>
+
+                    </br>
+                    <div class="list-group-flush d-flex flex-row flex-wrap">
+                      <a class="list-group-item w-50 list-group-item-action">
+                        <i class="fas fa-bed"></i> <span>{{ housenlot.Bedroom }}</span>
+                      </a>
+                      <a class="list-group-item w-50 list-group-item-action">
+                        <i class="fas fa-bath"> </i><span>{{ housenlot.Bathroom }}</span>
+                      </a>
+                      <a class="list-group-item w-50 list-group-item-action">
+                        <i class="fas fa-home"> </i><span>{{ housenlot.House }}</span>
+                      </a>
+                      <a class="list-group-item w-50 list-group-item-action">
+                        <i class="fas fa-chart-area"> </i><span>{{ housenlot.Lot }}</span>
+                      </a>
+                    </div>
+                    </br>
+
+                    <div class="row">
+                      <div class="col">
+                        <a href="#/item/{{$index}}" ng-click="gotoTOP()">See More</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-8 hovereffect">
+                  <img src="{{ housenlot.images[0] }}" class="w-100 img-responsive">
+                  <!--span class="tag2 hot">3 <i class="far fa-images"></i></span-->
+                  <!--span class="tag hots"><i class="fi fi-star"></i> Featured</span-->
+                  <div class="overlay">
+                    <h2></h2>
+                    <p>
+                      <a href="#/item/{{$index}}" ng-click="gotoTOP()">See more</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<modal id="custom-modal-1">
+  <div class="modal">
+    <div class="modal-body">
+      <h1>A Custom Modal!</h1>
+      <p>
+        Home page text: <input type="text" ng-model="vm.bodyText" />
+      </p>
+      <button ng-click="vm.closeModal('custom-modal-1');">Close</button>
+    </div>
+  </div>
+  <div class="modal-background"></div>
+</modal>

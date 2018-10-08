@@ -1,0 +1,93 @@
+<div class="jumbotron-fluid">
+  <div class="parallax4" background-image-directive="image/popup/popup1.jpg">
+
+    <div class="bodyparallax">
+      <h3>Pop Ups</h3>
+      <p class="Lead">Every one of us desires to own the home of our dreams, but most of us don’t even know where to start.</p>
+    </div>
+
+  </div>
+  </br>
+</div>
+
+
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="#home">Home</a></li>
+    <li class="breadcrumb-item"><a href="#properties">Properties</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Pop ups</li>
+  </ol>
+</nav>
+
+
+<div class="container">
+  <div class="row">
+
+    <div class="col-md-6 ">
+      <div id='carousel-custom' class='carousel slide' data-ride='carousel'>
+
+        <div class='carousel-inner'>
+          <div class='carousel-item active'>
+            <img src="image/popup/popup1.jpg" class="w-100 h-50 img-responsive" alt='' />
+          </div>
+          <div class='carousel-item'>
+            <img src="image/popup/popup2.jpg" class="w-100 h-50 img-responsive" alt='' />
+          </div>
+          <div class='carousel-item'>
+            <img src="image/popup/popup3.jpg" class="w-100 h-50 img-responsive" alt='' />
+          </div>
+          <div class='carousel-item'>
+            <img src="image/popup/popup4.jpg" class="w-100 h-50 img-responsive" alt='' />
+          </div>
+
+
+          <a class='left carousel-control' data-target='#carousel-custom' data-slide='prev'>
+            <span class='glyphicon glyphicon-chevron-left'></span>
+          </a>
+          <a class='right carousel-control' data-target='#carousel-custom' data-slide='next'>
+            <span class='glyphicon glyphicon-chevron-right'></span>
+          </a>
+
+        </div>
+
+        <ol class='carousel-indicators'>
+          <li data-target='#carousel-custom' data-slide-to='0' class='active'><img src="image/popup/popup1.jpg" class="img-responsive" alt='' /></li>
+          <li data-target='#carousel-custom' data-slide-to='1'><img src="image/popup/popup2.jpg" class="img-responsive" alt='' /></li>
+          <li data-target='#carousel-custom' data-slide-to='2'><img src="image/popup/popup3.jpg" class="img-responsive" alt='' /></li>
+          <li data-target='#carousel-custom' data-slide-to='3'><img src="image/popup/popup4.jpg" class="img-responsive" alt='' /></li>
+        </ol>
+      </div>
+      <hr>
+    </div>
+    <div class="col-md-6  ">
+      <div class="table-responsive">
+        <table class="table table-bordered">
+          <tr class="table-success">
+            <th>Pop Ups</th>
+            <th>Floor</th>
+            <th>Selling</th>
+          </tr>
+          <tr ng-repeat="pop in Popup">
+            <td>{{pop.name}}</td>
+            <td>{{ pop.House }}</td>
+            <td>{{ pop.Selling }}</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+
+
+  </div>
+</div>
+
+<div class="container" style="background-color:white; max-height:450px;">
+  <h2>Site Development Plan</h2>
+  <hr style="  border-bottom:3px solid #4d5923;">
+  <div class="row ">
+    <a href="https://files.widgetic.com/file/widgetic-uploads/weebly/image-loupe/3192807/jf2ko5bo-3w3xprv.png">
+      <img src="https://files.widgetic.com/file/widgetic-uploads/weebly/image-loupe/3192807/jf2ko5bo-3w3xprv.png" alt="Click to zoom" style="transform-origin: 0px 0px 0px; transform: translate(0px, -0.0719041px) scale(0.639148);" height="70%" class="ïmg-responsive">
+    </a>
+
+  </div>
+</div>
