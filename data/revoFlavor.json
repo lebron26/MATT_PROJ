@@ -1,0 +1,156 @@
+[{
+  "housenlot": [{
+      "id": "0",
+      "name": "Alcove",
+      "images": ["image/homepage/h2.jpg"],
+      "Lot": "45 sq.m",
+      "House": "48 sq.m",
+      "Bedroom": "1",
+      "Bathroom": "2",
+      "Selling": "1,860,000",
+      "Monthly": "P13,950 FOR 12MOS",
+      "Status": "For Sale",
+      "floor": ["image/housenlot/Alcove3.JPG", "image/housenlot/Alcove4.JPG"]
+    },
+    {
+      "id": "1",
+      "name": "Spaces",
+      "images": ["image/housenlot/spaces.jpeg"],
+      "Lot": "45 sq.m",
+      "House": "40 sq.m",
+      "Bedroom": "2",
+      "Bathroom": "1",
+      "Selling": "1,390,000",
+      "Monthly": "P10,425 FOR 12MOS",
+      "Status": "For Sale",
+      "floor": ["image/housenlot/spaces2.JPG", "image/housenlot/spaces3.JPG"]
+    },
+    {
+      "id": "2",
+      "name": "Nest",
+      "images": ["image//housenlot/nest.jpeg"],
+      "Lot": "121 sq.m",
+      "House": "72 sq.m",
+      "Bedroom": "2",
+      "Bathroom": "2",
+      "Selling": "3,630,000",
+      "Monthly": "P26,917 FOR 12MOS",
+      "Status": "For Sale",
+      "floor": ["image/housenlot/Alcove3.JPG", "image/housenlot/Alcove4.JPG"]
+    },
+    {
+      "id": "3",
+      "name": "Cocoon",
+      "images": ["image//housenlot/cocoon.jpeg"],
+      "Lot": "80 sq.m",
+      "House": "60 sq.m",
+      "Bedroom": "3",
+      "Bathroom": "2",
+      "Selling": "2,440,000",
+      "Monthly": "P18,250 FOR 12MOS",
+      "Status": "For Sale",
+      "floor": ["image/housenlot/nest2.JPG", "image/housenlot/nest3.JPG"]
+    }
+  ],
+  "popups": [{
+      "id": "4",
+      "name": "F&B -7.5",
+      "House": "7.5 sq.m",
+      "Selling": "890,000",
+      "Monthly": "P10,333 FOR 12MOS",
+      "Status": "For Sale"
+    },
+    {
+      "id": "5",
+      "name": "F&B -18",
+      "House": "18 sq.m",
+      "Selling": "1,880,000",
+      "Monthly": "P10,333 FOR 12MOS",
+      "Status": "For Sale"
+    },
+    {
+      "id": "6",
+      "name": "F&B -36",
+      "House": "36 sq.m",
+      "Selling": "3,750,000",
+      "Monthly": "P10,333 FOR 12MOS",
+      "Status": "For Sale"
+    },
+    {
+      "id": "7",
+      "name": "F&B -48",
+      "House": "48 sq.m",
+      "Selling": "3,750,000",
+      "Monthly": "P10,333 FOR 12MOS",
+      "Status": "For Sale"
+    },
+    {
+      "id": "8",
+      "name": "F&B -54",
+      "House": "54 sq.m",
+      "Selling": "4,810,000",
+      "Monthly": "P10,333 FOR 12MOS",
+      "Status": "For Sale"
+    },
+    {
+      "id": "9",
+      "name": "F&B -72",
+      "House": "72 sq.m",
+      "Selling": "6,800,000",
+      "Monthly": "P10,333 FOR 12MOS",
+      "Status": "For Sale"
+    },
+    {
+      "id": "10",
+      "name": "Retail 7.5",
+      "House": "7.5 sq.m",
+      "Selling": "770,000",
+      "Monthly": "P10,333 FOR 12MOS",
+      "Status": "For Sale"
+    },
+    {
+      "id": "11",
+      "name": "Retail 18",
+      "House": "18 sq.m",
+      "Selling": "1,590,000",
+      "Monthly": "P10,333 FOR 12MOS",
+      "Status": "For Sale"
+    },
+    {
+      "id": "12",
+      "name": "Retail 36",
+      "House": "36 sq.m",
+      "Selling": "3,180,000",
+      "Monthly": "P10,333 FOR 12MOS",
+      "Status": "For Sale"
+    },
+    {
+      "id": "13",
+      "name": "Retail 48",
+      "House": "48 sq.m",
+      "Selling": "4,040,000",
+      "Monthly": "P10,333 FOR 12MOS",
+      "Status": "For Sale"
+    },
+    {
+      "id": "14",
+      "name": "Retail 54",
+      "House": "54 sq.m",
+      "Selling": "4,480,000",
+      "Monthly": "P10,333 FOR 12MOS",
+      "Status": "For Sale"
+    },
+    {
+      "id": "15",
+      "name": "Retail 72",
+      "House": "72 sq.m",
+      "Selling": "5,650,000",
+      "Monthly": "P10,333 FOR 12MOS",
+      "Status": "For Sale"
+    }
+  ],
+
+  "Villas": "none",
+  "Condo": "none"
+
+}]

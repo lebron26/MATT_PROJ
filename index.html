@@ -56,15 +56,19 @@
       </ul>
       <form class="form-inline my-2 my-lg-0">
         <div class="input-group-btn">
-          <input class="form-control mr-sm-2" ng-model="searchText" type="search" placeholder="Search Properties">
-          <button class="btn btn-outline-warning  my-2 my-sm-0" ng-click="submitFilter(searchText)" type="submit"><i class="fa fa-search"></i>
+          <input class="form-control mr-sm-2" list="names"ng-model="searchText" ng-keyup="complete(searchText)" type="search" placeholder="Search Properties" class="form-control">
+          <!--button class="btn btn-outline-warning  my-2 my-sm-0" ng-click="submitFilter(searchText)" type="submit"><i class="fa fa-search"></i-->
+          <button class="btn btn-outline-warning  my-2 my-sm-0" ng-click="testing()" type="submit"><i class="fa fa-search"></i>
           </button>
+
         </div>
-      </form>
     </div>
+    </form>
     </div>
   </nav>
-
+  <datalist id="names" ng-model="hidethis" ng-hide="hidethis">
+    <option ng-repeat="housenlot in filterhouse" ng-click="fillTextbox(housenlot)" value="{{housenlot}}"></option>
+  </datalist>
 
   <div ng-view>
     <!--- LAHAT NG TEMPLATE D2 mag rurun -->
