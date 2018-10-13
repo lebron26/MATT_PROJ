@@ -149,6 +149,7 @@ font-size: 14px;
 
 
 
+
 /* Tims Body ;) */
 
 h1 { font-size: 2em; }
@@ -157,6 +158,27 @@ h3 { font-size: 1.17em; }
 h4 { font-size: 1.12em; }
 h5 { font-size: .83em; }
 h6 { font-size: .75em; }
+
+.card-hover .reveal {
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+    padding: 0;
+}
+
+.card-hover:hover .reveal {
+    height: auto;
+    visibility: visible;
+    opacity: 100;
+    transition: opacity 2s ease;
+}
+
+.card{
+  text-align: center;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
 
 
 
@@ -191,20 +213,22 @@ h6 { font-size: .75em; }
  background-image: url("../../image/bg.jpg"); /* The image used */
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: cover;
+  background-size: cover; 
 
 
   }
 
 
-div.card .carousel-inner{
+.carousel-inner{
     box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     text-align: center;
 }
 
 
-.nav-tabs .nav-link.active {
 
+
+.nav-tabs .nav-link.active {
+  
     background-color: transparent;
     border-bottom:3px solid #000000;
     border-right: none;
@@ -219,7 +243,7 @@ div.card .carousel-inner{
 
 
 
-.social >ul > li > a {
+a {
   color: #fff;
   text-decoration: none;
 }
@@ -254,7 +278,7 @@ div.card .carousel-inner{
 .social ul li {
   display: block;
   margin: 5px;
-  background: rgba(0, 0, 0, 0.36);
+  background: #144955;
   width: 300px;
   text-align: right;
   padding: 10px;
@@ -271,21 +295,16 @@ div.card .carousel-inner{
   -webkit-transform: translate(110px, 0);
   -moz-transform: translate(110px, 0);
   -ms-transform: translate(110px, 0);
-  -o-transform: translate(110px, 0);
+  -o-transform: translate(110px, 0);   
   transform: translate(110px, 0);
-  background: rgba(255, 255, 255, 0.4);
+  background: #4F9CAE;
 }
 .social ul li:hover a {
-  color: #000;
+  color: #FFFFFF;
 }
 .social ul li:hover i {
   color: #fff;
-  background: #FF3300;
-  -webkit-transform: rotate(360deg);
-  -moz-transform: rotate(360deg);
-  -ms-transform: rotate(360deg);
-  -o-transform: rotate(360deg);
-  transform: rotate(360deg);
+  background: #144955;
   -webkit-transition: all 1s;
   -moz-transition: all 1s;
   -ms-transition: all 1s;
@@ -294,21 +313,14 @@ div.card .carousel-inner{
 }
 .social ul li i {
   margin-left: 10px;
-  color: #000;
+  color: #07A1C5;
   background: #fff;
   padding: 10px;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
   border-radius: 50%;
   width: 20px;
   height: 20px;
   font-size: 20px;
   background: #ffffff;
-  -webkit-transform: rotate(0deg);
-  -moz-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
-  -o-transform: rotate(0deg);
-  transform: rotate(0deg);
 }
 
 
@@ -319,7 +331,7 @@ div.card .carousel-inner{
     cursor:pointer;
     width:50px;
     height:50px;
-    background-color:#000000;
+    background-color:#144955;
     text-indent:-9999px;
     display:none;
     -webkit-border-radius:60px;
@@ -342,3 +354,4 @@ div.card .carousel-inner{
     opacity:1;filter:"alpha(opacity=100)";
     -ms-filter:"alpha(opacity=100)";
 }
+
