@@ -1,13 +1,8 @@
-
-
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Lora', Georgia, Times, serif;
 
 }
 
-h3 {
-    text-shadow: 1px 1px 1px #ccc;
-}
 
 p, div {
     font-family: 'Lora', Helvetica, Arial, sans-serif;
@@ -16,10 +11,8 @@ p, div {
 }
 
 .fullnav{
-//  background-color: #28340C;
-//  max-height:60px;
-
-  background-color: #144955;
+  background-color: #144955 ;
+  max-height:70%
 
 }
 
@@ -28,7 +21,6 @@ p, div {
   position: absolute;
   z-index:1;
     top:0;
-    border-radius: 50%;
 border: 1px solid black;
 }
 
@@ -46,106 +38,38 @@ border: 1px solid black;
 }
 
 .nav-item .nav-link {
-  color:white !important;
-      font-size: 1.0em !important;
+  color:white;
+      font-size: 1.1em !important;
+     font-family: 'Lora', Georgia, Times, serif;
 }
 
 .nav-item .nav-link:hover{
-  color: #ffc107 !important;
-  border-bottom:2px solid #ffc107;
+  color: #FFFFFF !important;
+  text-shadow: 6px 6px 12px #000000;
 }
 
-.navbar-nav li:hover > div.dropdown-menu {
-    display: block;
-
-}
-.dropdown-submenu {
-    position:relative;
-}
-.dropdown-submenu>.dropdown-menu {
-    top:0;
-  //  left:100%;
-    margin-top:-6px;
-}
-
-/* rotate caret on hover */
-.dropdown-menu {
-  background-color:gray;
-
-}
-
-.dropdown-item:hover{
-  background-color:gray;
-color:black !important;
-}
-
-.dropdown-item >div>a{
-color: #ffff;
-}
-.dropdown-item >div>a:hover{
-  text-decoration: none;
-  color:  #ffc107;
-}
-
-
-.dropdown-menu > div > a:hover:after {
-   //text-decoration: underline;
-
-  //  transform: rotate(-90deg);
-}
-
-.nav-tabs > li > a
-{
-    /* adjust padding for height*/
-    padding-top: 4px;
-    padding-bottom: 4px;
-
+ .nav-link.dropdown-toggle a{
+  color: #FFFFFF !important;
+  text-shadow: 6px 6px 12px #000000;
 }
 
 
 
 
-table{
-  width:100%;
-
-}
-tr:nth-child(odd) {
-    background-color: #f2f2f2
-}
-
-td{
-  width:75%;
-}
 
 .jumbotron{
-  background-color: #F3EAAF;
+  background-color: #FFFFFF;
+  z-index: 5;
+  box-shadow: 0 8px 16px -6px black;
 }
 
 body {
-    background-color:#F3EAAF ;
-    height:100%;
+ 
+  background-color:#F3EAAF;/* Used if the image is unavailable */
+
+   
 }
 
-
-
-// Wala lng to
-.jumbotron {
-    border-top: 2px solid #ddd;
-}
-
-.nav-tabs .nav-link.active {
-    font-weight:bold;
-    background-color: transparent;
-    border-bottom:3px solid #4d5923;
-    border-right: none;
-    border-left: none;
-    border-top: none;
-}
-
-.check-span span{
-display:block;
-font-size: 14px;
-}
 
 
 
@@ -159,6 +83,28 @@ h4 { font-size: 1.12em; }
 h5 { font-size: .83em; }
 h6 { font-size: .75em; }
 
+.card-hover .reveal {
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+    padding: 0;
+    color: #FFFFFF;    }
+
+.card-hover:hover .reveal {
+    height: auto;
+    visibility: visible;
+    opacity: 50;
+    transition: opacity 1.5s ease;
+
+    background-color: rgba(20, 73, 85, 0.7) ;
+
+}
+
+.card{
+  text-align: center;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
 
 
 
