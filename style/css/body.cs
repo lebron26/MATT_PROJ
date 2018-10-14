@@ -38,24 +38,60 @@ border: 1px solid black;
 }
 
 .nav-item .nav-link {
-  color:white;
+   color: #FFFFFF !important;
       font-size: 1.1em !important;
      font-family: 'Lora', Georgia, Times, serif;
 }
 
 .nav-item .nav-link:hover{
-  color: #FFFFFF !important;
-  text-shadow: 6px 6px 12px #000000;
-}
-
- .nav-link.dropdown-toggle a{
-  color: #FFFFFF !important;
-  text-shadow: 6px 6px 12px #000000;
+  text-shadow: 3px 3px 10px #FFFFFF;
 }
 
 
+.breadcrumb{
+ background-color:#144955;
+ opacity: 0.8;
+}
+
+.breadcrumb > .breadcrumb-item a{
+color:#E5E5E5;
+}
+
+.breadcrumb-item.active {
+    color: #FFFFFF;
+    text-shadow: 1px 1px 2px #FFFFFF;
+
+}
+
+.dropdown-menu {
+  background-color: #1A6070;
+}
+
+.dropdown-menu .dropdown-item:hover{
+  background-color: #E5E5E5 ;
+}
 
 
+.table-success, .table-success>td, .table-success>th {
+    background-color: #144955;
+}
+.table-success>th
+{
+  color:#FFFFFF;
+}
+
+
+.table {
+  background-color:white;
+    box-shadow: 0 8px 8px -6px black;
+
+
+}
+
+.img-thumbnail{
+  background-color: transparent;
+  border-color: transparent;
+}
 
 .jumbotron{
   background-color: #FFFFFF;
@@ -70,8 +106,21 @@ body {
    
 }
 
+.btn-outline-warning  {
+ color: #E5E5E5 ;
+ border-color: #144955;
 
+}
 
+.btn-outline-warning:hover {
+     color: #FFFFFF;
+     background-color: transparent; 
+     border-color: transparent; 
+}
+
+.footer{
+  background-color: #144955 ;
+}
 
 
 /* Tims Body ;) */
@@ -251,34 +300,5 @@ a {
 }
 
 
-#scroll {
-    position:fixed;
-    right:10px;
-    bottom:10px;
-    cursor:pointer;
-    width:50px;
-    height:50px;
-    background-color:#144955;
-    text-indent:-9999px;
-    display:none;
-    -webkit-border-radius:60px;
-    -moz-border-radius:60px;
-    border-radius:60px
-}
-#scroll span {
-    position:absolute;
-    top:50%;
-    left:50%;
-    margin-left:-8px;
-    margin-top:-12px;
-    height:0;
-    width:0;
-    border:8px solid transparent;
-    border-bottom-color:#ffffff;
-}
-#scroll:hover {
-    background-color:#e74c3c;
-    opacity:1;filter:"alpha(opacity=100)";
-    -ms-filter:"alpha(opacity=100)";
-}
+
 

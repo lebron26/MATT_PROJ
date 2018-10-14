@@ -93,11 +93,6 @@ app.controller('homeCtrl', function homeCtrl($scope, $anchorScroll, $timeout, $l
 
   }
 
-  $scope.gotoTOP = function() {
-    $location.hash("navbar");
-    $anchorScroll();
-  }
-
   $scope.gotoAnchor = function(x) {
     var newHash = x;
     if ($location.hash() !== newHash) {
@@ -111,3 +106,4 @@ app.controller('homeCtrl', function homeCtrl($scope, $anchorScroll, $timeout, $l
     }
   };
 })
+
