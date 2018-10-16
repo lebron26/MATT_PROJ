@@ -12,8 +12,9 @@ p, div {
 
 .fullnav{
   background-color: #144955 ;
-  max-height:70%
-
+  max-height:70%;
+  width: 100%;
+  color: white;
 }
 
 
@@ -100,10 +101,10 @@ color:#E5E5E5;
 }
 
 body {
- 
+
   background-color:#F3EAAF;/* Used if the image is unavailable */
 
-   
+
 }
 
 .btn-outline-warning  {
@@ -114,8 +115,8 @@ body {
 
 .btn-outline-warning:hover {
      color: #FFFFFF;
-     background-color: transparent; 
-     border-color: transparent; 
+     background-color: transparent;
+     border-color: transparent;
 }
 
 .footer{
@@ -123,7 +124,7 @@ body {
 }
 
 
-/* Tims Body ;) */
+/* Tims Body ;)
 
 h1 { font-size: 2em; }
 h2 { font-size: 1.5em; }
@@ -131,7 +132,7 @@ h3 { font-size: 1.17em; }
 h4 { font-size: 1.12em; }
 h5 { font-size: .83em; }
 h6 { font-size: .75em; }
-
+*/
 .card-hover .reveal {
     visibility: hidden;
     opacity: 0;
@@ -189,7 +190,7 @@ h6 { font-size: .75em; }
  background-image: url("../../image/bg.jpg"); /* The image used */
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: cover; 
+  background-size: cover;
 
 
   }
@@ -204,7 +205,7 @@ h6 { font-size: .75em; }
 
 
 .nav-tabs .nav-link.active {
-  
+
     background-color: transparent;
     border-bottom:3px solid #000000;
     border-right: none;
@@ -213,7 +214,7 @@ h6 { font-size: .75em; }
 }
 
 .carousel-inner >.carousel-item img {
-    height:600px;
+  height:600px;
 
 }
 
@@ -271,7 +272,7 @@ a {
   -webkit-transform: translate(110px, 0);
   -moz-transform: translate(110px, 0);
   -ms-transform: translate(110px, 0);
-  -o-transform: translate(110px, 0);   
+  -o-transform: translate(110px, 0);
   transform: translate(110px, 0);
   background: #4F9CAE;
 }
@@ -300,5 +301,25 @@ a {
 }
 
 
+.tab-content > .tab-pane:not(.active) {
+    display: block;
+    height: 0;
+    overflow-y: hidden;
+}
+
+@media (max-width: 768px) {
+    .navbar-brand {
+      position: static !important;
+      z-index: 	auto !important;
+      top: auto !important;
+      border: none;
+      text-align:center;
+
+    }
 
 
+    .carousel-inner >.carousel-item img {
+      height:300px;
+
+    }
+}
