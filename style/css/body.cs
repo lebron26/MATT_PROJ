@@ -316,10 +316,11 @@ a {
       text-align:center;
 
     }
-
+    p{
+      font-size:8px;
+    }
 
     .carousel-inner >.carousel-item img {
       height:300px;
-
     }
 }

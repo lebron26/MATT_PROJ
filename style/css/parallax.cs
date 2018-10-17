@@ -5,7 +5,7 @@
     /* Create the parallax scrolling effect */
     background-size: cover;
     background-attachment: fixed !important;
-
+  
     padding-top:300px;
 
     color:white;
@@ -41,7 +41,7 @@
     /* Create the parallax scrolling effect */
     background-size: cover;
     background-attachment: fixed !important;
-
+  height:100%;
     padding-top:400px;
 
 
