@@ -274,7 +274,6 @@ a {
   -ms-transform: translate(110px, 0);
   -o-transform: translate(110px, 0);
   transform: translate(110px, 0);
-  background: #4F9CAE;
 }
 .social ul li:hover a {
   color: #FFFFFF;
@@ -291,13 +290,11 @@ a {
 .social ul li i {
   margin-left: 10px;
   color: #07A1C5;
-  background: #fff;
   padding: 10px;
   border-radius: 50%;
   width: 20px;
   height: 20px;
   font-size: 20px;
-  background: #ffffff;
 }
 
 
@@ -310,7 +307,7 @@ a {
 @media (max-width: 768px) {
     .navbar-brand {
       position: static !important;
-      z-index: 	auto !important;
+      z-index:  auto !important;
       top: auto !important;
       border: none;
       text-align:center;
