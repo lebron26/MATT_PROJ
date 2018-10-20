@@ -3,7 +3,7 @@
 
 <head>
   <title>MATT Homepage</title>
-  <base href="http://localhost/MATT_PROJ/" />
+  <base href="http://localhost:8080/MATT_PROJ/" />
   <link rel="icon" href="image/logo_kMu_icon.ico">
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -26,15 +26,21 @@
 </head>
 
 <body ng-controller="homeCtrl" class="parallaxbody">
-  <nav class="navbar navbar-expand-lg navbar-light py-0 fullnav sticky-top">
-    <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarCollapse">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+  <nav class="navbar navbar-expand-sm navbar-light py-0 fullnav sticky-top">
+
+
+    <div class="logocontainer container-fluid">
+      <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
     <a class="navbar-brand ml-5 d-lg-block d-xl-block d-none " href="#home" ng-click="gotoTOP()"><img class="img-responsive" src="image/homepage/rfs.png" width="100%" height="auto"></a>
     <h2 class="navbar-brand d-block d-sm-block d-md-none " href="#home" ng-click="gotoTOP()">Revolution Flavorscapes</h2>
 
-    <div class="collapse navbar-collapse justify-content-stretch" id="navbarCollapse">
-      <ul class="navbar-nav  mr-auto mt-2 mt-lg-0 py-2 nav-fill w-75">
+    </div>
+
+
+    <div class="collapse navbar-collapse " id="navbarCollapse">
+      <ul class="navbar-nav mt-2 mt-lg-0 py-2 nav-fill w-75">
         <li class="nav-item"><a class="nav-link button" role="button" ng-click="gotoTOP()" href="#home">Home</a></li>
 
         <li class="nav-item"><a class="nav-link" ng-href="#about-us" ng-click="gotoTOP()">About Us</a></li>
@@ -61,14 +67,15 @@
       </ul>
       <form class="form-inline my-2 my-lg-0">
         <div class="input-group-btn">
-          <input class="form-control mr-sm-2" list="names"ng-model="searchText" ng-keyup="complete(searchText)" type="search" placeholder="Search Properties" class="form-control">
+          <input class="form-control mr-sm-2" list="names" ng-model="searchText" ng-keyup="complete(searchText)" type="search" placeholder="Search Properties" class="form-control">
           <!--button class="btn btn-outline-warning  my-2 my-sm-0" ng-click="submitFilter(searchText)" type="submit"><i class="fa fa-search"></i-->
           <button class="btn btn-outline-warning  my-2 my-sm-0" ng-click="testing()" type="submit"><i class="fa fa-search"></i>
           </button>
 
         </div>
+      </form>
     </div>
-    </form>
+
     </div>
 
   </nav>

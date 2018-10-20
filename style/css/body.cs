@@ -25,19 +25,19 @@ p, div {
 border: 1px solid black;
 }
 
-.navbar-collapse > ul{
-  padding-left: 260px;
 
-}
 
 .navbar-collapse > h1{
   padding-top: 20px;
 }
 
-.fullnav > a{
+.fullnav > div >a{
   background-color: white;
 }
+.logocontainer{
 
+  width: 280px;
+}
 .nav-item .nav-link {
    color: #FFFFFF !important;
       font-size: 1.1em !important;
@@ -305,19 +305,28 @@ a {
 }
 
 @media (max-width: 768px) {
-    .navbar-brand {
-      position: static !important;
-      z-index:  auto !important;
-      top: auto !important;
-      border: none;
-      text-align:center;
 
-    }
-    p{
-      font-size:8px;
-    }
 
-    .carousel-inner >.carousel-item img {
-      height:300px;
-    }
+}
+
+@media (max-width: 450px) {
+  .logocontainer{
+
+    width: 100%;
+  }
+  .navbar-brand {
+    position: static !important;
+    z-index:  auto !important;
+    top: auto !important;
+    border: none;
+    text-align:center;
+
+  }
+  p{
+    font-size:8px;
+  }
+
+  .carousel-inner >.carousel-item img {
+    height:300px;
+  }
 }
