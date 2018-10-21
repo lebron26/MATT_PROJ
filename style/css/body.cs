@@ -3,10 +3,18 @@ h1, h2, h3, h4, h5, h6 {
 
 }
 
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
 
 p, div {
     font-family: 'Lora', Helvetica, Arial, sans-serif;
-    font-size: 1em !important;
+    font-size: 18px !important;
 
 }
 
@@ -106,6 +114,8 @@ body {
 
 
 }
+
+
 
 .btn-outline-warning  {
  color: #E5E5E5 ;
@@ -309,7 +319,7 @@ a {
 
 }
 
-@media (max-width: 450px) {
+@media (max-width: 414px) {
   .logocontainer{
 
     width: 100%;

@@ -34,13 +34,13 @@
         <span class="navbar-toggler-icon"></span>
       </button>
     <a class="navbar-brand ml-5 d-lg-block d-xl-block d-none " href="#home" ng-click="gotoTOP()"><img class="img-responsive" src="image/homepage/rfs.png" width="100%" height="auto"></a>
-    <h2 class="navbar-brand d-block d-sm-block d-md-none " href="#home" ng-click="gotoTOP()">Revolution Flavorscapes</h2>
+    <h2 class="navbar-brand d-block d-sm-block d-md-none " style="color: white" href="#home" ng-click="gotoTOP()">Revolution Flavorscapes</h2>
 
     </div>
 
 
     <div class="collapse navbar-collapse " id="navbarCollapse">
-      <ul class="navbar-nav mt-2 mt-lg-0 py-2 nav-fill w-75">
+      <ul class="navbar-nav mt-2 mt-lg-0 py-2 nav-fill w-100">
         <li class="nav-item"><a class="nav-link button" role="button" ng-click="gotoTOP()" href="#home">Home</a></li>
 
         <li class="nav-item"><a class="nav-link" ng-href="#about-us" ng-click="gotoTOP()">About Us</a></li>
@@ -66,12 +66,13 @@
         <li class="nav-item"><a class="nav-link" ng-click="gotoTOP()" href="#contact">Contact Us</a></li>
       </ul>
       <form class="form-inline my-2 my-lg-0">
-        <div class="input-group-btn">
+        <div class="input-group">
           <input class="form-control mr-sm-2" list="names" ng-model="searchText" ng-keyup="complete(searchText)" type="search" placeholder="Search Properties" class="form-control">
           <!--button class="btn btn-outline-warning  my-2 my-sm-0" ng-click="submitFilter(searchText)" type="submit"><i class="fa fa-search"></i-->
-          <button class="btn btn-outline-warning  my-2 my-sm-0" ng-click="testing()" type="submit"><i class="fa fa-search"></i>
+          <span class="input-group-btn">
+              <button class="btn btn-outline-warning  my-2 my-sm-0" ng-click="testing()" type="submit"><i class="fa fa-search"></i>
           </button>
-
+  </span>
         </div>
       </form>
     </div>
@@ -100,7 +101,7 @@
 
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular-route.js"></script>
-  <script type="text/javascript" src="style/js/up.js"></script>
+
   <script type="text/javascript" src="app/app.js"></script>
   <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.js"></script>
 
