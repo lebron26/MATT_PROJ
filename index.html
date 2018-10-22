@@ -3,7 +3,7 @@
 
 <head>
   <title>MATT Homepage</title>
-  <base href="http://localhost/MATT_PROJ/" />
+  <base href="http://localhost:8080/MATT_PROJ/" />
   <link rel="icon" href="image/logo_kMu_icon.ico">
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,6 +16,7 @@
 
   <link rel="stylesheet" href="style/css/body.cs">
   <link rel="stylesheet" href="style/css/card.cs">
+  <link rel="stylesheet" href="style/css/homecard.cs">
   <link rel="stylesheet" href="style/css/carousel.cs">
   <link rel="stylesheet" href="style/css/parallax.cs">
   <!-- Fonts -->
@@ -33,37 +34,38 @@
       <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarCollapse">
         <span class="navbar-toggler-icon"></span>
       </button>
-    <a class="navbar-brand ml-5 d-lg-block d-xl-block d-none " href="#home" ng-click="gotoTOP()"><img class="img-responsive" src="image/homepage/rfs.png" width="100%" height="auto"></a>
-    <h2 class="navbar-brand d-block d-sm-block d-md-none " style="color: white" href="#home" ng-click="gotoTOP()">Revolution Flavorscapes</h2>
+    <a class="navbar-brand ml-5 d-lg-block d-xl-block d-none " href="#home" ng-click="gotoAnchor('fullnav')"><img class="img-responsive" src="image/homepage/rfs.png" width="100%" height="auto"></a>
+    <h2 class="navbar-brand d-block d-sm-block d-md-none " style="color: white" href="#home" ng-click="gotoAnchor('fullnav')">Revolution Flavorscapes</h2>
 
     </div>
 
 
     <div class="collapse navbar-collapse " id="navbarCollapse">
       <ul class="navbar-nav mt-2 mt-lg-0 py-2 nav-fill w-100">
-        <li class="nav-item"><a class="nav-link button" role="button" ng-click="gotoTOP()" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link button" role="button" ng-click="gotoAnchor('fullnav')" href="#home">Home</a></li>
 
-        <li class="nav-item"><a class="nav-link" ng-href="#about-us" ng-click="gotoTOP()">About Us</a></li>
+        <li class="nav-item"><a class="nav-link" ng-href="#about-us" ng-click="gotoAnchor('fullnav')">About Us</a></li>
         <li class=" nav-item dropdown ">
-          <a ng-href="#properties" ng-click="gotoTOP()" class=" nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Properties </a>
+          <a ng-href="#properties" ng-click="gotoAnchor('fullnav')" class=" nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Properties </a>
           <div class=" dropdown-menu dropdown-menu-right">
 
             <div class="dropdown-item" ng-repeat="category in category">
               <div ng-if="category =='houseNlot'">
-                <a ng-href="#house" ng-click="gotoTOP()">House and Lot</a>
+                <a ng-href="#house" ng-click="gotoAnchor('fullnav')">House and Lot</a>
               </div>
               <div ng-if="category =='Popup'">
-                <a ng-href="#pop" ng-click="gotoTOP()">Pop up</a>
+                <a ng-href="#pop" ng-click="gotoAnchor('fullnav')">Pop up</a>
               </div>
               <div ng-if="category =='villas'">
-                <a ng-href="#error" ng-click="gotoTOP()">Villas</a>
+                <a ng-href="#error" ng-click="gotoAnchor('fullnav')">Villas</a>
               </div>
               <div ng-if="category =='condo'">
-                <a ng-href="#error" ng-click="gotoTOP()">Condominiums</a>
+                <a ng-href="#error" ng-click="gotoAnchor('fullnav')">Condominiums</a>
               </div>
             </div>
         </li>
-        <li class="nav-item"><a class="nav-link" ng-click="gotoTOP()" href="#contact">Contact Us</a></li>
+        <li class="nav-item"><a class="nav-link" ng-click="gotoAnchor('fullnav')" href="#contact">Contact Us</a></li>
+
       </ul>
       <form class="form-inline my-2 my-lg-0">
         <div class="input-group">

@@ -3,7 +3,7 @@ h1, h2, h3, h4, h5, h6 {
 
 }
 
-html,body
+body
 {
     width: 100%;
     height: 100%;
@@ -312,11 +312,6 @@ a {
     display: block;
     height: 0;
     overflow-y: hidden;
-}
-
-@media (max-width: 768px) {
-
-
 }
 
 @media (max-width: 414px) {

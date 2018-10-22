@@ -91,30 +91,12 @@ app.controller('homeCtrl', function homeCtrl($scope, $anchorScroll, $timeout, $l
 
   }*/
 
-  $scope.gotoTOP = function() {
-    $location.hash("navbar");
-    $anchorScroll();
-  }
-
-  $scope.gotoAnchor = function(x) {
-    var newHash = x;
-    if ($location.hash() !== newHash) {
-      // set the $location.hash to `newHash` and
-      // $anchorScroll will automatically scroll to it
-      $location.hash(x);
-    } else {
-      // call $anchorScroll() explicitly,
-      // since $location.hash hasn't changed
-      $anchorScroll();
-    }
-  };
-
   //paragraphs
   $scope.read = "READ MORE";
 
   $scope.para1 = "Revolution Flavorscapes at Lakeshore, situated in the Culinary Capital of the Philippines, is considered the World’s First Livable Food Park, as the project will house pop-up stores featuring various cuisines from different countries. It is developed by Revolution Precrafted in collaboration with Central Country Estate Inc.The Lakeshore is the first master-planned community in the country to offer residents a world of secluded lakeside luxury, 250 hectares of prime land crowned with a magnificent 12 hectare man-made lake.";
 
-  $scope.para2 = "Residents need not go far to enjoy adventure-filled activities like fishing, sailing and kayaking. ​With an enchanting 12-hectare man-made lake as its main feature, The Lakeshore offers a beautiful and serene ambiance complimented with recreational and commercial facilities for the whole family to enjoy. The Lakeshore features a wide variety of water sports facilities such as non-motorized boating, kayaking and sailing. A white water jet fountain shooting up to 18 meteres high will serve as a landmark and act as a filtering and aeration device.The island in the lake even enhances the splendor of this haven with an enchanting 12 - hectare man - made lake as its main feature,  The Lakeshore offers a beautiful and serene ambiance complimented with recreational and commercial facilities for the whole family to enjoy.The Lakeshore features a wide variety of water sports facilities such as non - motorized boating, kayaking and sailing.A white water jet fountain shooting up to 18 meteres high will serve as a landmark and act as a filtering and aeration device.The island in the lake even enhances the splendor of this haven.";
+  $scope.para2 = "Residents need not go far to enjoy adventure-filled activities like fishing, sailing and kayaking. ​With an enchanting 12-hectare man-made lake as its main feature, The Lakeshore offers a beautiful and serene ambiance complimented with recreational and commercial facilities for the whole family to enjoy. The Lakeshore features a wide variety of water sports facilities such as non-motorized boating, kayaking and sailing. A white water jet fountain shooting up to 18 meteres high will serve as a landmark and act as a filtering and aeration device.The island in the lake even enhances the splendor of this haven with an enchanting 12 - hectare man - made lake as its main feature,  The Lakeshore offers a beautiful and serene ambiance complimented with recreational and commercial facilities for the whole family to enjoy.The Lakeshore features a wide variety of water sports facilities such as non - motorized boating, kayaking and sailing.A white water jet fountain shooting upto 18 meteres high will serve as a landmark and act as a filtering and aeration device.The island in the lake even enhances the splendor of this haven.";
   $scope.numLimit = 150;
   $scope.readMore = function() {
 
@@ -126,4 +108,27 @@ app.controller('homeCtrl', function homeCtrl($scope, $anchorScroll, $timeout, $l
       $scope.read = "READ LESS";
     }
   };
+
+  $scope.gotoTOP = function() {
+      $timeout(function() {
+    $location.hash('navbar');
+    $anchorScroll();
+  });
+
+
+  }
+
+  $scope.gotoAnchor = function(x) {
+    var newHash = x;
+
+    if ($location.hash() !== newHash) {
+      // set the $location.hash to `newHash` and
+      // $anchorScroll will automatically scroll to it
+      $location.hash(x);
+    } else {
+      // call $anchorScroll() explicitly,
+      // since $location.hash hasn't changed
+      $anchorScroll();
+    }
+  }
 })

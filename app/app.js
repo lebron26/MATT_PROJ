@@ -1,5 +1,6 @@
 var app = angular.module('myApp', ['ngRoute']);
 
+
 app.config(function ($routeProvider, $locationProvider){
   $routeProvider
         .when('/',{
@@ -15,6 +16,10 @@ app.config(function ($routeProvider, $locationProvider){
         .when('/home',{
           controller: 'homeCtrl',
           templateUrl: 'template/home.html'
+        })
+        .when('/home2',{
+          controller: 'homeCtrl',
+          templateUrl: 'template/home2.html'
         })
         .when('/properties',{
           controller: 'homeCtrl',
@@ -64,7 +69,6 @@ app.service('search',function($location){
     $location.path('#/home');
   }
 })
-
 
 app.filter('searchFor', function(){
 
