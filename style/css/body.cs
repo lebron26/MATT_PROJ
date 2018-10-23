@@ -19,10 +19,11 @@ p, div {
 }
 
 .fullnav{
-  background-color: #144955 ;
+
+ background: rgba(20, 73, 85, 0.8);
   max-height:70%;
   width: 100%;
-  color: white;
+
 }
 
 
