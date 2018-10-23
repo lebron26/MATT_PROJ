@@ -302,7 +302,7 @@ a {
 }
 .social ul li i {
   margin-left: 10px;
-  color: #07A1C5;
+  color: #FFFFFF;
   padding: 10px;
   border-radius: 50%;
   width: 20px;
@@ -337,4 +337,23 @@ a {
   .carousel-inner >.carousel-item img {
     height:300px;
   }
+}
+
+#myBtn {
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #144955; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 50px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+    background-color: #1A6070; /* Add a dark-grey background on hover */
 }
