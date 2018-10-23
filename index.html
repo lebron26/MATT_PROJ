@@ -2,7 +2,7 @@
 <html ng-app="myApp">
 
 <head>
-  <title>MATT Homepage</title>
+  <title>Revolution Flavorscapes</title>
   <base href="http://localhost:8080/MATT_PROJ/" />
   <link rel="icon" href="image/logo_kMu_icon.ico">
   <meta charset="utf-8">
@@ -20,8 +20,7 @@
   <link rel="stylesheet" href="style/css/carousel.cs">
   <link rel="stylesheet" href="style/css/parallax.cs">
   <!-- Fonts -->
-  <link href="http://fonts.googleapis.com/css?family=Corben:bold" rel="stylesheet" type="text/css">
-  <link href="http://fonts.googleapis.com/css?family=Nobile" rel="stylesheet" type="text/css">
+
   <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto|Lobster" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fontisto@v3.0.4/css/fontisto/fontisto.min.css">
 </head>
@@ -135,6 +134,26 @@
       })
     });
   </script>
+  <script>
+          // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function() {scrollFunction()};
+
+      function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+              document.getElementById("myBtn").style.display = "block";
+          } else {
+              document.getElementById("myBtn").style.display = "none";
+          }
+      }
+
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+          document.body.scrollTop = 0; // For Safari
+          document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+
+
+      }
+      </script>
 
 
 
