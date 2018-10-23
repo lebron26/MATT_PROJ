@@ -133,6 +133,9 @@ body {
   background-color: #144955 ;
 }
 
+.card-block >.row>.col>a{
+  color: blue !important;
+}
 
 /* Tims Body ;)
 
